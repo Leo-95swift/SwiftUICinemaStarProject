@@ -7,6 +7,8 @@ import Foundation
 ///  Протокол для взаимодействия с интерактором
 protocol MoviesDetailInteractorProtocol {
     func fetchMovieDetails(by id: Int)
+    func changeIsFavoriteState(_ isFavorite: Bool, id: Int)
+    func fetchIsFavoriteState(id: Int) -> Bool
 }
 
 /// Интерактор для  экрана с детальным фильмом
@@ -67,5 +69,13 @@ class MoviesDetailInteractor: MoviesDetailInteractorProtocol {
                 }
             })
             .store(in: &cancellablesSet)
+    }
+
+    func changeIsFavoriteState(_ isFavorite: Bool, id: Int) {
+        UserDefaults.standard.setValue(isFavorite, forKey: "id_\(id)")
+    }
+
+    func fetchIsFavoriteState(id: Int) -> Bool {
+        UserDefaults.standard.bool(forKey: "id_\(id)")
     }
 }

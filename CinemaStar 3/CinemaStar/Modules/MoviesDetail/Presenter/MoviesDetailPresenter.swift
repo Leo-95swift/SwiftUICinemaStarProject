@@ -9,6 +9,8 @@ import SwiftData
 protocol MoviesDetailPresenterProtocol: ObservableObject {
     func prepareMovieDetails(by id: Int, context: ModelContext)
     func didFetchMovieDetail(_ movie: MovieDetail)
+    func changeIsFavoriteState(_ isFavorite: Bool, id: Int)
+    func fetchIsFavoriteState(id: Int) -> Bool
 }
 
 /// Презентер для  экрана с детальным фильмом
@@ -48,5 +50,15 @@ class MoviesDetailPresenter: MoviesDetailPresenterProtocol {
             similarMovies: movie.similarMovies,
             image: imageData
         ))
+    }
+
+    func changeIsFavoriteState(_ isFavorite: Bool, id: Int) {
+        interactor?.changeIsFavoriteState(isFavorite, id: id)
+    }
+
+    func fetchIsFavoriteState(id: Int) -> Bool {
+        guard let interactor else { return false }
+
+        return interactor.fetchIsFavoriteState(id: id)
     }
 }

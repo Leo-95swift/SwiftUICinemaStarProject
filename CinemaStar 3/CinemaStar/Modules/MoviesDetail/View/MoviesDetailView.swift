@@ -58,6 +58,7 @@ struct MoviesDetailView: View {
                 presenter.prepareMovieDetails(by: id ?? 0, context: context)
             } else {
                 presenter.state = .data(MovieDetail())
+                isfavoritesTapped = fetchIsFavoriteState(id: id ?? 0)
             }
         }
     }
@@ -98,8 +99,13 @@ struct MoviesDetailView: View {
     private var addToFavoritesButtonView: some View {
         Button {
             isfavoritesTapped.toggle()
+            changeIsFavoriteState(isfavoritesTapped, id: id ?? 0)
         } label: {
-            Image(systemName: isfavoritesTapped ? S.heartButtonFilled : S.heartButtonRegular)
+            Image(
+                systemName: isfavoritesTapped
+                    ? S.heartButtonFilled
+                    : S.heartButtonRegular
+            )
         }
         .foregroundColor(.white)
     }
@@ -258,6 +264,15 @@ struct MoviesDetailView: View {
         }
         .padding(.leading, 16)
         .foregroundColor(.white)
+    }
+
+    private func changeIsFavoriteState(_ isFavorite: Bool, id: Int) {
+        print(id)
+        presenter.changeIsFavoriteState(isFavorite, id: id)
+    }
+
+    private func fetchIsFavoriteState(id: Int) -> Bool {
+        presenter.fetchIsFavoriteState(id: id)
     }
 }
 
