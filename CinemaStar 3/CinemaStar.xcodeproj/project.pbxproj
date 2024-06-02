@@ -131,6 +131,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0132224E2C0C96F500F3A2E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B38E2B92C0575200051667D /* MoviesView.swift */,
+				8BAAA0F52C06B81F00D72CC4 /* MoviesShimmerView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0132224F2C0C96FC00F3A2E9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8B38E2C02C0575640051667D /* MoviesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		013222502C0C970600F3A2E9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8B3953D52BD8958C0029E49F /* Movie.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		013222512C0C970B00F3A2E9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8B38E2BE2C0575440051667D /* MoviesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		013222522C0C971100F3A2E9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8B38E2BC2C0575380051667D /* MoviesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		013222542C0C977200F3A2E9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8B38E2C92C0575E50051667D /* MoviesDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		013222552C0C977A00F3A2E9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8B7037EE2BDA1752004A2ED8 /* MovieDetail.swift */,
+				8B6F4AED2C0737A70008F50F /* SimilarMovie.swift */,
+				8B7037F02BDA17C3004A2ED8 /* MovieActor.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		013222562C0C978200F3A2E9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8B38E2C72C0575DA0051667D /* MoviesDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		013222572C0C978800F3A2E9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8B38E2C52C0575CE0051667D /* MoviesDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		013222582C0C979000F3A2E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B38E2C32C0575B80051667D /* MoviesDetailView.swift */,
+				8BBB6DC22C06C61A00AE42F2 /* MoviesDetailShimmerView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8B0CA3AB2C09AA8C00DBB30F /* KeychainService */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,12 +267,11 @@
 		8B38E2B72C0574D90051667D /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				8BAAA0F52C06B81F00D72CC4 /* MoviesShimmerView */,
-				8B38E2C22C0575710051667D /* MoviesEntities */,
-				8B38E2B92C0575200051667D /* MoviesView.swift */,
-				8B38E2BC2C0575380051667D /* MoviesInteractor.swift */,
-				8B38E2BE2C0575440051667D /* MoviesPresenter.swift */,
-				8B38E2C02C0575640051667D /* MoviesRouter.swift */,
+				0132224E2C0C96F500F3A2E9 /* View */,
+				013222522C0C971100F3A2E9 /* Interactor */,
+				013222512C0C970B00F3A2E9 /* Presenter */,
+				013222502C0C970600F3A2E9 /* Entity */,
+				0132224F2C0C96FC00F3A2E9 /* Router */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -196,32 +279,13 @@
 		8B38E2B82C0574F90051667D /* MoviesDetail */ = {
 			isa = PBXGroup;
 			children = (
-				8BBB6DC22C06C61A00AE42F2 /* MoviesDetailShimmerView */,
-				8B38E2CB2C0575E70051667D /* MoviesDetailEntities */,
-				8B38E2C32C0575B80051667D /* MoviesDetailView.swift */,
-				8B38E2C52C0575CE0051667D /* MoviesDetailInteractor.swift */,
-				8B38E2C72C0575DA0051667D /* MoviesDetailPresenter.swift */,
-				8B38E2C92C0575E50051667D /* MoviesDetailRouter.swift */,
+				013222582C0C979000F3A2E9 /* View */,
+				013222572C0C978800F3A2E9 /* Interactor */,
+				013222562C0C978200F3A2E9 /* Presenter */,
+				013222552C0C977A00F3A2E9 /* Entity */,
+				013222542C0C977200F3A2E9 /* Router */,
 			);
 			path = MoviesDetail;
-			sourceTree = "<group>";
-		};
-		8B38E2C22C0575710051667D /* MoviesEntities */ = {
-			isa = PBXGroup;
-			children = (
-				8B3953D52BD8958C0029E49F /* Movie.swift */,
-			);
-			path = MoviesEntities;
-			sourceTree = "<group>";
-		};
-		8B38E2CB2C0575E70051667D /* MoviesDetailEntities */ = {
-			isa = PBXGroup;
-			children = (
-				8B7037EE2BDA1752004A2ED8 /* MovieDetail.swift */,
-				8B6F4AED2C0737A70008F50F /* SimilarMovie.swift */,
-				8B7037F02BDA17C3004A2ED8 /* MovieActor.swift */,
-			);
-			path = MoviesDetailEntities;
 			sourceTree = "<group>";
 		};
 		8B39539C2BD69ED90029E49F /* Assembly */ = {
