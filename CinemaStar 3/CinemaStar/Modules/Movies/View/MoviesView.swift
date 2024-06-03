@@ -32,7 +32,9 @@ struct MoviesView: View {
                 .background(
                     NavigationLink(
                         destination:
-                        Assembly.buildMoviesDetailModule(id: presenter.selectedMovieID ?? 0),
+                        Assembly().buildMoviesDetailModule(
+                            id: presenter.selectedMovieID ?? 0
+                        ),
                         isActive: Binding(
                             get: { presenter.selectedMovieID != nil },
                             set: { if !$0 { presenter.selectedMovieID = nil } }

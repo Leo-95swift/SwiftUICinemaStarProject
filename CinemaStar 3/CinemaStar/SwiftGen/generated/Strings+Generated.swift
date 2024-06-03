@@ -56,7 +56,7 @@ internal enum S {
   }
   internal enum MoviesView {
     internal enum Title {
-      /// Localizable.strings
+      /// Localizable.S
       ///   CinemaStar
       /// 
       ///   Created by Kostya Khvan on 30.05.2024.

@@ -8,7 +8,8 @@ import SwiftUI
 struct CinemaStarApp: App {
     var body: some Scene {
         WindowGroup {
-            Assembly.buildMoviesModule()
+            let assembly = Assembly()
+            assembly.buildMoviesModule()
                 .modelContainer(for: [SwiftDataMovie.self, SwiftDataMovieDetail.self])
         }
     }
