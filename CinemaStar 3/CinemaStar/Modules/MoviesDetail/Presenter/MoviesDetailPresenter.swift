@@ -6,11 +6,9 @@ import Foundation
 import SwiftData
 
 ///  Протокол для взаимодействия с презентером
-protocol MoviesDetailPresenterProtocol: ObservableObject {
+protocol MoviesDetailPresenterProtocol: ObservableObject, AnyObject {
     func prepareMovieDetails(by id: Int, context: ModelContext)
     func didFetchMovieDetail(_ movie: MovieDetail)
-    func changeIsFavoriteState(_ isFavorite: Bool, id: Int)
-    func fetchIsFavoriteState(id: Int) -> Bool
 }
 
 /// Презентер для  экрана с детальным фильмом

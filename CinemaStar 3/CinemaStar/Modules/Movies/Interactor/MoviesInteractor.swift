@@ -7,15 +7,22 @@ import SwiftUI
 
 /// Протокол для взаимодействия с интерактором
 protocol MoviesInteractorProtocol {
+    // для загрузки фильмов
     func fetchMovies()
 }
 
 /// Интерактор экрана с фильмами
-class MoviesInteractor: MoviesInteractorProtocol {
+final class MoviesInteractor: MoviesInteractorProtocol {
+    // MARK: - Public Properties
+
     var presenter: (any MoviesPresenterProtocol)?
     var networkService: NetworkServiceProtocol?
 
-    var cancellablesSet: Set<AnyCancellable> = []
+    // MARK: - Private Properties
+
+    private var cancellablesSet: Set<AnyCancellable> = []
+
+    // MARK: - Public Methodes
 
     func fetchMovies() {
         networkService?.fetchMovies()

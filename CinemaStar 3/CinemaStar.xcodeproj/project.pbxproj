@@ -10,7 +10,6 @@
 		8B22A6202BD9CCA800E5CD88 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22A61F2BD9CCA800E5CD88 /* UIColor+Extension.swift */; };
 		8B2324842C088A72002FACFB /* MoviesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2324832C088A72002FACFB /* MoviesInteractorTests.swift */; };
 		8B23248B2C089B3C002FACFB /* MoviesDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B23248A2C089B3C002FACFB /* MoviesDetailInteractorTests.swift */; };
-		8B27EBCB2BD68DB100984FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27EBCA2BD68DB100984FFE /* AppDelegate.swift */; };
 		8B27EBD42BD68DB200984FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B27EBD32BD68DB200984FFE /* Assets.xcassets */; };
 		8B38E2B22C0571F90051667D /* CinemaStarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38E2B12C0571F90051667D /* CinemaStarApp.swift */; };
 		8B38E2B62C0574AA0051667D /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38E2B52C0574AA0051667D /* Assembly.swift */; };
@@ -24,7 +23,6 @@
 		8B38E2CA2C0575E50051667D /* MoviesDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38E2C92C0575E50051667D /* MoviesDetailRouter.swift */; };
 		8B38E2CD2C0588160051667D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38E2CC2C0588160051667D /* NetworkService.swift */; };
 		8B38E2CF2C058CD80051667D /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38E2CE2C058CD80051667D /* View+Extension.swift */; };
-		8B3953B52BD6AA3A0029E49F /* ClosureHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3953B42BD6AA3A0029E49F /* ClosureHelper.swift */; };
 		8B3953C02BD785780029E49F /* StackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3953BF2BD785780029E49F /* StackView+Extension.swift */; };
 		8B3953C22BD785A70029E49F /* PrepareForAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3953C12BD785A70029E49F /* PrepareForAutoLayout.swift */; };
 		8B3953C42BD785C50029E49F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3953C32BD785C50029E49F /* UIView+Extension.swift */; };
@@ -69,7 +67,6 @@
 		8B2324832C088A72002FACFB /* MoviesInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInteractorTests.swift; sourceTree = "<group>"; };
 		8B23248A2C089B3C002FACFB /* MoviesDetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailInteractorTests.swift; sourceTree = "<group>"; };
 		8B27EBC72BD68DB100984FFE /* CinemaStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B27EBCA2BD68DB100984FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B27EBD32BD68DB200984FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B27EBD82BD68DB200984FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B38E2B12C0571F90051667D /* CinemaStarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaStarApp.swift; sourceTree = "<group>"; };
@@ -84,7 +81,6 @@
 		8B38E2C92C0575E50051667D /* MoviesDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailRouter.swift; sourceTree = "<group>"; };
 		8B38E2CC2C0588160051667D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8B38E2CE2C058CD80051667D /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
-		8B3953B42BD6AA3A0029E49F /* ClosureHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureHelper.swift; sourceTree = "<group>"; };
 		8B3953BF2BD785780029E49F /* StackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extension.swift"; sourceTree = "<group>"; };
 		8B3953C12BD785A70029E49F /* PrepareForAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareForAutoLayout.swift; sourceTree = "<group>"; };
 		8B3953C32BD785C50029E49F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -309,7 +305,6 @@
 		8B3953B62BD753020029E49F /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				8B27EBCA2BD68DB100984FFE /* AppDelegate.swift */,
 				8B38E2B12C0571F90051667D /* CinemaStarApp.swift */,
 			);
 			path = Application;
@@ -323,7 +318,6 @@
 				8B3953C32BD785C50029E49F /* UIView+Extension.swift */,
 				8B22A61F2BD9CCA800E5CD88 /* UIColor+Extension.swift */,
 				8B38E2CE2C058CD80051667D /* View+Extension.swift */,
-				8B3953B42BD6AA3A0029E49F /* ClosureHelper.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -597,7 +591,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B27EBCB2BD68DB100984FFE /* AppDelegate.swift in Sources */,
 				8B6F4B092C0873990008F50F /* XCAssets+Generated.swift in Sources */,
 				8B7037ED2BDA1381004A2ED8 /* SpokenLanguagesDTO.swift in Sources */,
 				8BBB6DC72C06D8E300AE42F2 /* SwiftDataMovie.swift in Sources */,
@@ -619,7 +612,6 @@
 				8B38E2C82C0575DA0051667D /* MoviesDetailPresenter.swift in Sources */,
 				8B6F4B0A2C0873990008F50F /* Strings+Generated.swift in Sources */,
 				8B3953DE2BD8A3AA0029E49F /* ViewState.swift in Sources */,
-				8B3953B52BD6AA3A0029E49F /* ClosureHelper.swift in Sources */,
 				8B7037EF2BDA1752004A2ED8 /* MovieDetail.swift in Sources */,
 				8B6F4AEE2C0737A70008F50F /* SimilarMovie.swift in Sources */,
 				8B7037E92BDA1343004A2ED8 /* CountriesDTO.swift in Sources */,

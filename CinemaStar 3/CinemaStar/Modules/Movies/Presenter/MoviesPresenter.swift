@@ -5,20 +5,18 @@ import Combine
 import SwiftData
 import UIKit
 
-// swiftlint:disable all
-
 /// Протокол для взаимодействия с презентером
 protocol MoviesPresenterProtocol: ObservableObject {
     /// Передача фильмов с интерактора во вью
     func didFetchMovies(_ movies: [Movie])
     /// Заявка на получение фильмов с нетворк сервиса
     func prepareMovies(context: ModelContext)
-
+    /// Для перехода на экран деталей
     func goToDetailScreen(with id: Int)
 }
 
 /// Презентер экрана с фильмами
-class MoviesPresenter: MoviesPresenterProtocol {
+final class MoviesPresenter: MoviesPresenterProtocol {
     @Published var state: ViewState<[Movie]> = .loading
     @Published var selectedMovieID: Int?
     @Published private var moviesToStore: [SwiftDataMovie] = []
@@ -66,5 +64,3 @@ class MoviesPresenter: MoviesPresenterProtocol {
             }
     }
 }
-
-// swiftlint:enable all

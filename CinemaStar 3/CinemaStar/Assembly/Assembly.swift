@@ -5,11 +5,12 @@ import SwiftUI
 
 /// Билдер модулей
 class Assembly {
-    static func buildMoviesModule() -> some View {
+    private let networkService = NetworkService()
+
+    func buildMoviesModule() -> some View {
         let presenter = MoviesPresenter()
         let interactor = MoviesInteractor()
         let router = MoviesRouter()
-        let networkService = NetworkService()
         let view = MoviesView(presenter: presenter)
 
         presenter.interactor = interactor
@@ -21,11 +22,10 @@ class Assembly {
         return view
     }
 
-    static func buildMoviesDetailModule(id: Int) -> some View {
+    func buildMoviesDetailModule(id: Int) -> some View {
         let interactor = MoviesDetailInteractor()
         let presenter = MoviesDetailPresenter()
         let router = MoviesDetailRouter()
-        let networkService = NetworkService()
         var view = MoviesDetailView(presenter: presenter)
 
         view.id = id
